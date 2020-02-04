@@ -1,0 +1,17 @@
+---
+permalink: /humans.txt
+---
+/* TEAM */
+Name: Tingyi Lai
+Site: https://www.tingyilai.com/
+Mastodon: https://merveilles.town/@Tingyi
+Twitter: @tingyilai
+
+Name: Gueorgui Tcherednitchenko
+Site: https://gueorgui.net/
+Mastodon: https://merveilles.town/@gueorgui
+Twitter: @gueorgui
+
+/* SITE */
+Standards: HTML5, CSS3
+Static site generator: Jekyll 4.0

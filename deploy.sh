@@ -2,6 +2,9 @@
 set -o nounset
 set -o errexit
 
+bold=$(tput bold)
+normal=$(tput sgr0)
+
 echo "    _     ____               _ _     _       ____                       "
 echo "   / \   |  _ \ ___  ___ ___(_) |__ | | ___ / ___| _ __   __ _  ___ ___ "
 echo "  / _ \  | |_) / _ \/ __/ __| | '_ \| |/ _ \\___ \| '_ \ / _  |/ __/ _ \ "
@@ -22,19 +25,19 @@ while getopts ":n" opt; do
     esac
 done
 
-echo "👀 Preparing..."
+echo "${bold}👀 Preparing...${normal}"
 DIR="$( cd "$( dirname $( dirname "$0" ) )" && pwd)"
 source "$DIR/.env"
 
 echo ""
-echo "🛠 Building static site..."
+echo "${bold}🛠 Building static site...${normal}"
 bundle exec jekyll build
 
 echo ""
-echo "🚚 Deploying to server..."
+echo "${bold}🚚 Deploying to server...${normal}"
 chmod -R og+Xr ${DIR}/_site
 echo "→ Deploying ${DIR}/_site to ${DEPLOY_ACCOUNT}@${DEPLOY_SERVER}:aps.web"
 rsync $NFLAG -rvzp --delete --exclude-from="$DIR/.deployignore" "${DIR}/_site/" "${DEPLOY_ACCOUNT}@${DEPLOY_SERVER}:aps.web"
 
 echo ""
-echo "🎉 Done!"
+echo "${bold}🎉 Done!${normal}"

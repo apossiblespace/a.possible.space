@@ -4,7 +4,10 @@ html {
   font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 500;
-  font-size: 2rem;
+  font-size: 24px;
+}
+
+body {
   max-width: 22rem;
   margin: 3rem auto;
   padding: 0 3rem;
@@ -29,9 +32,8 @@ header {
 }
 
 @media (max-width: 480px) {
-  html {
+  body {
     margin: 2rem auto;
-    font-size: 1.5rem;
     padding: 0 1.5rem;
   }
   header {

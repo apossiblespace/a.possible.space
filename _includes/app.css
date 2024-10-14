@@ -28,6 +28,10 @@ header {
   margin-bottom: 2rem;
 }
 
+.projects {
+  margin: 2rem 0 4rem 0;
+}
+
 .logo {
   max-width: 100%;
 }

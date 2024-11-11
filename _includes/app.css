@@ -1,7 +1,7 @@
 html {
   background-color: #f6f6f3;
   color: #666666;
-  font-family: -apple-system, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-family: -apple-system, "Helvetica Neue", Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 500;
   font-size: 24px;
@@ -13,8 +13,22 @@ body {
   padding: 0 3rem;
 }
 
-a, a:visited {
+h1,
+h2,
+h3 {
+  color: #607d8b;
+}
+
+hr {
+  border: none;
+  height: 3px;
+  background: #ccc;
+}
+
+a,
+a:visited {
   color: black;
+  transition: color 0.3s;
 }
 
 a:hover {
@@ -23,13 +37,30 @@ a:hover {
 
 header {
   width: 100%;
-  max-width: 300px;
-  margin-left: -2.5rem;
+  max-width: 200px;
+  margin-left: -2rem;
   margin-bottom: 2rem;
 }
 
-.projects {
+.projects,
+.services {
   margin: 2rem 0 4rem 0;
+}
+
+a.button {
+  text-decoration: none;
+  display: inline-block;
+  background-color: #607d8b;
+  color: white;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+
+  &:visited {
+    color: white;
+  }
+  &:hover {
+    color: #d9e8f0;
+  }
 }
 
 .logo {

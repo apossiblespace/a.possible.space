@@ -32,7 +32,7 @@ a:visited {
 }
 
 a:hover {
-  color: #3a83f7;
+  color: #607d8b;
 }
 
 header {
@@ -40,6 +40,16 @@ header {
   max-width: 200px;
   margin-left: -2rem;
   margin-bottom: 2rem;
+}
+
+svg.parts-logo #parts-text path {
+  fill: black;
+}
+
+@media (prefers-color-scheme: dark) {
+  svg.parts-logo #parts-text path {
+    fill: white;
+  }
 }
 
 .projects,
@@ -156,5 +166,32 @@ a.button {
   }
   100% {
     transform: scale(calc(var(--flip) * 1), 1);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    background-color: #222222;
+    color: #cccccc;
+  }
+
+  a,
+  a:visited {
+    color: white;
+    transition: color 0.3s;
+  }
+
+  a:hover {
+    color: #607d8b;
+  }
+
+  h1,
+  h2,
+  h3 {
+    color: #607d8b;
+  }
+
+  hr {
+    background: #444;
   }
 }

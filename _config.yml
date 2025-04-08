@@ -1,20 +1,20 @@
 title: A Possible Space
 email: us@possible.space
 description: >- # this means to ignore newlines until "baseurl:"
-  A multi-cultural creative studio in London. Photography, book design and
-  publishing, software engineering, eco-friendly systems, and more.
+  A tiny, multi-cultural creative studio in London, working at the intersection
+  of technology and mental health. Custom software solutions, workshops,
+  individual counselling.
 baseurl: "" # the subpath of your site, e.g. /blog
 author: "A Possible Space, Ltd."
 url: "https://a.possible.space"
 twitter_username: APossibleSpace
-github_username:  apossiblespace
+github_username: apossiblespace
 meta:
   theme_color: "#000"
   twitter: "@APossibleSpace"
   twitter_card_type: "summary"
   github_username: "apossiblespace"
-  default_social_image:
-    "/assets/images/social/apossiblespace.png"
+  default_social_image: "/assets/images/social/apossiblespace.png"
 
 plugins:
   - jekyll-feed
@@ -23,7 +23,6 @@ exclude:
   - deploy.sh
   - .env
   - .deployignore
-
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
